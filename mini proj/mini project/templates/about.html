@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #3182ce;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #2c5282;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to our Academic Performance Indicator System. This system allows university faculty members to log in, calculate their academic performance scores, and view their scores. Administrators can log in to view and manage user data and scores.</p>
+        <p>If you have any questions or need support, please contact us at support@example.com.</p>
+        <a href="{{ url_for('home') }}" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
